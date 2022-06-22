@@ -1,3 +1,4 @@
+/* Global styling */
 :root{
     --pink:hsl(322, 100%, 66%);
     --very-Pale-Cyan: hsl(193, 100%, 96%);
@@ -13,9 +14,68 @@ html{
     font-size: 18px;
 
 }
-
-
-
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+}
+/* Container styling */
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-hero{
+    background-image: url("images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 110px;
+    background-color:rgb(237, 251, 254);
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 55px 40px 40px 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header button{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0.5px 0.5px 5px 0px #000000;
+}
+.hero_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+.description{
+    width: 45%;
+}
+.description button{
+    padding: 13px 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--pink);
+    color: #FFF;
+    font-weight: 6  00;
+    margin-top: 30px;
+}
+.hero_photo{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.hero_photo img{
+    width: 100%;
+    
+}
 
 
 
